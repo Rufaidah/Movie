@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         requestJsonObject(0);
 
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        requestJsonObject(0);
+
         // Sliding Drawer
         mNavItems.add(new NavItem("Setting", "Setting Application", R.drawable.icon));
         mNavItems.add(new NavItem("About", "", R.drawable.icon));
