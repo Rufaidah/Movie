@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/splash"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"/>
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="30dp"/>
 
 </LinearLayout>

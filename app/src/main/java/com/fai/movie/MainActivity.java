@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        requestJsonObject(0);
 
         // Sliding Drawer
         mNavItems.add(new NavItem("Setting", "Setting Application", R.drawable.icon));
@@ -106,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLAyout);
         tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER);
         tabLayout.addTab(tabLayout.newTab().setText("Popular"));
-        tabLayout.addTab(tabLayout.newTab().setText("Now Showing"));
+        tabLayout.addTab(tabLayout.newTab().setText("Top Rated"));
         tabLayout.addTab(tabLayout.newTab().setText("Coming Soon"));
         
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -239,17 +241,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplication(), "Error Response", Toast.LENGTH_SHORT).show();
             }
         });
-//         If Need Header Response
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                HashMap<String, String> test = new HashMap<String, String>();
-//                test.put("X-Mashape-Key","C0BHO4cIsBmshBlylonaV0Vhb28lp1kKh2xjsn3JP2hFHaO7Dm");
-//                test.put("Accept","text/plain");
-//                return test;
-////                return super.getHeaders();
-//            }
-//        };
         queue.add(stringRequest);
     }
 }
