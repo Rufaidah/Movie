@@ -11,10 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
-<<<<<<< HEAD
-=======
-        android:layout_height="?attr/actionBarSize"
->>>>>>> 8988e5c38bf98fbf7b32dad0d74724f91fcc04e2
         android:scrollbars="horizontal"
         app:tabGravity="center"
         app:tabMode="scrollable"/>

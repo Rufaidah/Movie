@@ -13,11 +13,7 @@
     <RelativeLayout
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
-<<<<<<< HEAD
         android:layout_height="match_parent">
-=======
-        android:layout_height="match_parent" >
->>>>>>> 8988e5c38bf98fbf7b32dad0d74724f91fcc04e2
 
         <include
             android:id="@+id/tabs"
